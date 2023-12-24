@@ -1,6 +1,6 @@
 export function HangmanWord(){
-    const word = "fuck"
-    const gussedLetters = ["u","c"]
+    const word = "Kaveen"
+    const gussedLetters = ["v","e"]
     return <div style={{
         display: "flex",
         gap: ".25em",

@@ -1,6 +1,6 @@
-import { DeadMan } from "./assert/DeadMan"
-import { Man } from "./assert/Man"
-import { Rope } from "./assert/Rope"
+import { DeadMan } from "./DeadMan"
+import { Man } from "./Man"
+import { Rope } from "./Rope"
 
 export function HangmanDrawing() {
     return <div className='hangman-drawing'>
