@@ -14,10 +14,11 @@
     color: white;
 }
 
-.btn.inactive {
+.btn.inactive,
+.btn:disabled {
     opacity: 0.3;
 }
-.btn:hover:not(.inactive),
-.btn:focus:not(.inactive){
+.btn:hover:not(.inactive, .btn:disabled),
+.btn:focus:not(.inactive, .btn:disabled){
     background:  hsl(200, 100%, 75%);
 }
