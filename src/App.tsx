@@ -8,8 +8,12 @@ import { Keyboard } from './components/Keyboard';
 function App() {
   const [word, setWord] = useState("");
 
+  function getWord() {
+    return words[Math.floor(Math.random() * words.length)]
+  }
+
   useEffect(() => {
-    const randomWord = words[Math.floor(Math.random() * words.length)]
+    const randomWord = getWord()
     setWord(randomWord)
   }, [])
 
@@ -43,7 +47,7 @@ function App() {
       document.removeEventListener('keydown', handler)
     }
 
-  },[])
+  },[guessedLetters])
   
   return (
     <div className='mainContainer'>
