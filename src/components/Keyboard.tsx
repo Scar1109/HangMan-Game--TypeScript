@@ -1,4 +1,5 @@
-import styles from "../css/Keyboard.module.css"
+import styles from "../css/keyboard.module.css"
+
 type KeyboardProps = {
     activeLetters: string[]
     inactiveLetters: string[]
